@@ -1,0 +1,79 @@
+﻿<Window x:Class="HomeTask1.View.maneger"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTask1.View"
+        mc:Ignorable="d"
+        Title="maneger" Height="550" Width="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+           
+            <RowDefinition Height="55"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Image HorizontalAlignment="Center"
+                       Margin="10"
+                       VerticalAlignment="Center" Source="/HomeTask1;component/Resources/images.jpg"/>
+
+
+            </Grid>
+            <Grid Grid.Column="1">
+                <StackPanel  Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+
+                        <Label VerticalContentAlignment="Center" 
+                              Width="150" Content="MANAGER"
+                         />
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+
+                        <Label Width="80" Content="LOGIN"
+                         />
+                        <Label Width="120" Content="PETROVNA"
+                         />
+
+
+
+                    </StackPanel>
+
+                    <TextBlock Style="{StaticResource ToLine}"/>
+
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Row="2" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    Content="ZAKAZAT"
+                    Margin="10"
+                    
+                    Name="LoginButton"
+                    Style="{StaticResource MainStyleButton}" Click="LoginButton_Click"/>
+
+            <Button Grid.Column="1"
+                    Margin="10"
+                    Content="CLOSE"
+                    Name="CloseButton"
+                    Style="{StaticResource MainStyleButton}" Click="CloseButton_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
