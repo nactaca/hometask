@@ -19,3 +19,11 @@ C:\Users\ПК\source\repos\HomeTask1\HomeTask1\obj\Debug\HomeTask1.Properties.Re
 C:\Users\ПК\source\repos\HomeTask1\HomeTask1\obj\Debug\HomeTask1.csproj.CoreCompileInputs.cache
 C:\Users\ПК\source\repos\HomeTask1\HomeTask1\obj\Debug\HomeTask1.exe
 C:\Users\ПК\source\repos\HomeTask1\HomeTask1\obj\Debug\HomeTask1.csprojAssemblyReference.cache
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\bin\Debug\EntityFramework.dll
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\bin\Debug\EntityFramework.xml
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\obj\Debug\HomeTask1.csproj.CopyComplete
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\obj\Debug\View\NewOrder.g.cs
+C:\Users\ПК\source\repos\HomeTask1\HomeTask1\obj\Debug\View\NewOrder.baml

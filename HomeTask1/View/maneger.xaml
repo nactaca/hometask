@@ -55,6 +55,18 @@
             </Grid>
 
         </Grid>
+        <Grid Grid.Row="1">
+            <DataGrid AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Order Number "/>
+                    <DataGridTextColumn  Header=" Name "/>
+                    <DataGridTextColumn  Header="Quantity of goods"/>
+                    <DataGridTextColumn  Header=" Price "/>
+                </DataGrid.Columns>
+
+            </DataGrid>
+            
+        </Grid>
         <Grid Grid.Row="2" Grid.RowSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -62,17 +74,21 @@
             </Grid.ColumnDefinitions>
 
             <Button Grid.Column="0"
-                    Content="ZAKAZAT"
+                    Content="New order"
                     Margin="10"
                     
-                    Name="LoginButton"
-                    Style="{StaticResource MainStyleButton}" Click="LoginButton_Click"/>
+                    Name="New_Order_Button"
+                    Style="{StaticResource MainStyleButton}"
+                    Click="New_Order_Button_Click"/>
 
             <Button Grid.Column="1"
                     Margin="10"
-                    Content="CLOSE"
+                    Content="Close"
                     Name="CloseButton"
-                    Style="{StaticResource MainStyleButton}" Click="CloseButton_Click"/>
+                    Style="{StaticResource MainStyleButton}" 
+                    Click="CloseButton_Click"/>
+            
+                 
         </Grid>
 
     </Grid>

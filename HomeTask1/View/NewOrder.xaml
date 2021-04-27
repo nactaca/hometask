@@ -1,0 +1,96 @@
+﻿<Window x:Class="HomeTask1.View.NewOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTask1.View"
+        mc:Ignorable="d"
+        Title="NewOrder" Height="550" Width="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="55"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Label Content="New Order" FontSize="25" HorizontalContentAlignment="Center"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+
+                    <Label Width="150" Content="Order"
+                         />
+                    <TextBox 
+                        Width="150"
+                        x:Name="Order" Text="{Binding Path= Login, Mode =OneWayToSource}"
+                        
+                         />
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+
+                    <Label Width="150" Content="Number"
+                         />
+                <TextBox 
+                        Width="150"
+                        x:Name="Number" Text="{Binding Path= Login, Mode =OneWayToSource}"
+                        
+                         />
+
+            </StackPanel>
+                
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+
+                    <Label Width="150" Content="Name"
+                         />
+                    <TextBox 
+                        Width="150"
+                        x:Name="Name" Text="{Binding Path= Login, Mode =OneWayToSource}"
+                        
+                         />
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="3" Orientation="Horizontal">
+
+                    <Label Width="150" Content="Qality of Goods"
+                         />
+                    <TextBox 
+                        Width="150"
+                        x:Name="Qality_of_Goods" Text="{Binding Path= Login, Mode =OneWayToSource}"
+                        
+                         />
+
+                </StackPanel>
+                
+                <StackPanel Grid.Row="4" Orientation="Horizontal">
+
+                    <Label Width="150" Content="Price"
+                         />
+                    <TextBox 
+                        Width="150"
+                        x:Name="Price" Text="{Binding Path= Login, Mode =OneWayToSource}"
+                        
+                         />
+
+                </StackPanel>
+
+            </StackPanel>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Create Order"
+                    Margin="10"
+                    Name="OrderButton" Style="{StaticResource MainStyleButton}" />
+            
+            <Button Grid.Column="1" Content="Cancel"
+                    Margin="10"
+                    Name ="CancelButton" Style="{StaticResource MainStyleButton}" Click="CancelButton_Click" />
+            
+        </Grid>
+    </Grid>
+</Window>

@@ -33,5 +33,16 @@ namespace HomeTask1.View
         {
             Close();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void New_Order_Button_Click(object sender, RoutedEventArgs e)
+        {
+            NewOrder window = new NewOrder();
+            window.Show(); Close();
+        }
     }
 }
